@@ -1,40 +1,75 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+form {
     text-align: center;
-}
-
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
     margin-top: 20px;
 }
 
-table, th, td {
-    border: 1px solid #ccc;
+label {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
 }
 
-th, td {
+input[type="number"] {
+    padding: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"], #solve-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover, #solve-button:hover {
+    background-color: #0056b3;
+}
+
+#solve-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#matrix-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+input[type="text"] {
     padding: 10px;
+    font-size: 16px;
+    width: 70%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
     text-align: center;
 }
 
-th {
-    background-color: #f2f2f2;
+/* Estilo para resaltar el resultado */
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+    margin-top: 20px;
 }
